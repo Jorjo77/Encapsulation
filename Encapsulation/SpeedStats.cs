@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Encapsulation
 {
-    public class SpeedStats 
+    public class SpeedStats
     {
+        internal void StartWatching()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
