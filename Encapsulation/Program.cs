@@ -39,6 +39,17 @@ namespace Encapsulation
 
             //Immutable Objects == unchangeable - create new memory every time they're modified (string, int);
 
+            //Полезни клавишни комбинации: Ctrl+ <- kурсора отива наляво в края на думта, така е и на дясно. Ctrl+Shift+<-  маркира по този начин! Shift+Home те праща в началото на реда, Shift+end те праща в края на реда!
+            //React vs Angulat = 80:20 определено ни препоръчва React
+
+            //Oсновен принцип в ООП е че всеки клас трябва да отговаря за едно нещо и да върши само него.
+
+            //Често използвана архитектура в ООП (Engine class)
+            //В папка Core се слага бизнес логиката, а в Models класовете, а в Common
+
+            //Удобен метод: String.IsNullOrEmpty(value)
+
+            //Хубаво е да чистим using - и, които не използваме! 
         }
     }
 }

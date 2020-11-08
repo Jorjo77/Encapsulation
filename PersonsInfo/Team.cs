@@ -13,18 +13,36 @@ namespace PersonsInfo
         public Team(string name)
         {
             this.name = name;
+            firstTeam = new List<Person>();
+            reserveTeam = new List<Person>();
         }
 
         public IReadOnlyCollection<Person> FirstTeam 
         { 
             get
             {
-                return firstTeam;
+                return firstTeam.AsReadOnly();
             }
         
         }
 
-
-        public IReadOnlyCollection<Person> ReserveTeam { get; set; }
+        public IReadOnlyCollection<Person> ReserveTeam
+        {
+            get
+            {
+                return reserveTeam.AsReadOnly();
+            }
+        }
+        public void AddPlayer(Person person)
+        {
+            if (person.Age<40)
+            {
+                this.firstTeam.Add(person);
+            }
+            else if (person.Age>=40)
+            {
+                this.reserveTeam.Add(person);
+            }
+        }
     }
 }

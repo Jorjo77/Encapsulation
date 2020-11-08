@@ -5,17 +5,21 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encapsulation", "Encapsulation\Encapsulation.csproj", "{B343C5CB-FE1E-42FE-90FF-CAEA49146BAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThisExample", "ThisExample\ThisExample.csproj", "{308AC613-DB66-4613-A999-E5A179E6E8AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThisExample", "ThisExample\ThisExample.csproj", "{308AC613-DB66-4613-A999-E5A179E6E8AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessModifiers", "AccessModifiers\AccessModifiers.csproj", "{A012D1D8-2B0C-49B9-BCBE-DE86FAAD3A52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessModifiers", "AccessModifiers\AccessModifiers.csproj", "{A012D1D8-2B0C-49B9-BCBE-DE86FAAD3A52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessModifierInternal", "AccessModifierInternal\AccessModifierInternal.csproj", "{800AEBED-5383-42B9-8756-33BAC471FAA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccessModifierInternal", "AccessModifierInternal\AccessModifierInternal.csproj", "{800AEBED-5383-42B9-8756-33BAC471FAA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonsInfo", "PersonsInfo\PersonsInfo.csproj", "{602F4949-FD91-4959-8986-17D84C85A871}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonsInfo", "PersonsInfo\PersonsInfo.csproj", "{602F4949-FD91-4959-8986-17D84C85A871}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursionProperty", "RecursionProperty\RecursionProperty.csproj", "{80413FD1-56C4-40B6-9CFD-7ABA72E5FC38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursionProperty", "RecursionProperty\RecursionProperty.csproj", "{80413FD1-56C4-40B6-9CFD-7ABA72E5FC38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutableObjects", "MutableObjects\MutableObjects.csproj", "{3BB33061-D64A-4333-A041-5C3E269EA96F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MutableObjects", "MutableObjects\MutableObjects.csproj", "{3BB33061-D64A-4333-A041-5C3E269EA96F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassBoxData", "ClassBoxData\ClassBoxData.csproj", "{4E63DA81-8A09-4B4E-ADA9-6854758CDBF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingSpree", "ShoppingSpree\ShoppingSpree.csproj", "{764431E6-737A-4948-A5C5-2A0F6C9A939B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{3BB33061-D64A-4333-A041-5C3E269EA96F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BB33061-D64A-4333-A041-5C3E269EA96F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BB33061-D64A-4333-A041-5C3E269EA96F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E63DA81-8A09-4B4E-ADA9-6854758CDBF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E63DA81-8A09-4B4E-ADA9-6854758CDBF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E63DA81-8A09-4B4E-ADA9-6854758CDBF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E63DA81-8A09-4B4E-ADA9-6854758CDBF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{764431E6-737A-4948-A5C5-2A0F6C9A939B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{764431E6-737A-4948-A5C5-2A0F6C9A939B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{764431E6-737A-4948-A5C5-2A0F6C9A939B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{764431E6-737A-4948-A5C5-2A0F6C9A939B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
