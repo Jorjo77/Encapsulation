@@ -22,7 +22,7 @@ namespace ShoppingSpree.Core
             this.products = new List<Product>();
         }
 
-        public void Run()//това ди е метод за стартиране на енджина!
+        public void Run()//това е метод за стартиране на енджина!
         {
             //Place business logic here
             try
@@ -62,10 +62,10 @@ namespace ShoppingSpree.Core
         }
         private void ParsePeopleInput()
         {
-            string[] peopleArgs = Console.ReadLine().Split(";", StringSplitOptions.RemoveEmptyEntries);
+            string[] peopleArgs = Console.ReadLine().Split(";");
             foreach (string personStr in peopleArgs)
             {
-                string[] personArgs = personStr.Split('=', StringSplitOptions.RemoveEmptyEntries);
+                string[] personArgs = personStr.Split('=');
                 string personName = personArgs[0];
                 decimal personMoney = decimal.Parse(personArgs[1]);
                 //We may have an exception и е хубаво да си го трай кечнем, но първо да си го изведем в метод!
@@ -76,10 +76,10 @@ namespace ShoppingSpree.Core
 
         private void ParseProductsInput()
         {
-            string[] productsArgs = Console.ReadLine().Split(";", StringSplitOptions.RemoveEmptyEntries);
+            string[] productsArgs = Console.ReadLine().Split(";");
             foreach (string productStr in productsArgs)
             {
-                string[] personArgs = productStr.Split('=', StringSplitOptions.RemoveEmptyEntries);
+                string[] personArgs = productStr.Split('=');
                 string productName = personArgs[0];
                 decimal productCost = decimal.Parse(personArgs[1]);
                 //We may have an exception и е хубаво да си го трай кечнем, но първо да си го изведем в метод!

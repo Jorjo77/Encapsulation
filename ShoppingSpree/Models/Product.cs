@@ -22,7 +22,7 @@ namespace ShoppingSpree.Models
             } 
             private set
             {
-                if (String.IsNullOrEmpty(value))
+                if (String.IsNullOrWhiteSpace(value))
                 {
                     throw new ArgumentException(GlobalConstants.EmptyNameExsMsg);
                 }

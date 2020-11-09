@@ -11,10 +11,10 @@ namespace ShoppingSpree.Models
         private const string SUCC_BOUGHT_PRODUCT_MSG = "{0} bought {1}";
         private string name;
         private decimal money;
-        private readonly ICollection<Product> bag;//това е интерфейс, който ще ни позволи да енкапсулираме са разлика от лист-а.
+        private readonly ICollection<Product> bag;//това е интерфейс, който ще ни позволи да енкапсулираме за разлика от лист-а.
 
         //Var2 с вътрешен конструктор инициализиращ само листа и извикването му от долния с :this. Това ни позволява преизползването на код и се използва!
-        public Person()
+        private Person()
         {
             this.bag = new List<Product>();
         }
@@ -34,7 +34,7 @@ namespace ShoppingSpree.Models
             }
             private set
             {
-                if (String.IsNullOrEmpty(value))
+                if (String.IsNullOrWhiteSpace(value))
                 {
                     throw new ArgumentException(GlobalConstants.EmptyNameExsMsg);
                 }
@@ -45,11 +45,11 @@ namespace ShoppingSpree.Models
         {
             get
             {
-                return money;
+                return this.money;
             }
             private set
             {
-                if (money<0)
+                if (value<0)
                 {
                     throw new ArgumentException(GlobalConstants.NegativeMoneyExsMsg);
                 }
