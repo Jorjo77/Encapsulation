@@ -1,7 +1,7 @@
 ﻿
 using FootballTeamGenerator.Common;
 using System;
-using System.Collections;
+
 using System.Collections.Generic;
 using System.Linq;
 
@@ -39,12 +39,12 @@ namespace FootballTeamGenerator.Models
         }
 
         public int Rating =>
-            (int)Math.Round(this.players.Average(p => p.OveralSkill));
+            this.players.Count>0 ? (int)Math.Round(this.players.Average(p => p.OveralSkill)) : 0;
         public void AddPlayer(Player player)
         {
             this.players.Add(player);
         }
-        public void RemovePlaer(string playerName)
+        public void RemovePlayer(string playerName)
         {
             Player playerToRemove = this.players.FirstOrDefault(p => p.Name == playerName);
             if (playerToRemove == null)

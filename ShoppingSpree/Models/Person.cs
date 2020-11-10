@@ -18,7 +18,8 @@ namespace ShoppingSpree.Models
         {
             this.bag = new List<Product>();
         }
-        public Person(string name, decimal money):this () //с .this извикваме първо горния конструктор
+        public Person(string name, decimal money)
+            :this () //с .this извикваме първо горния конструктор
         {
             //Var1
             //this.bag = new List<Product>();

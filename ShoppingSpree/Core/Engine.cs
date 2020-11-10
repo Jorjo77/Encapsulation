@@ -82,7 +82,7 @@ namespace ShoppingSpree.Core
                 string[] personArgs = productStr.Split('=');
                 string productName = personArgs[0];
                 decimal productCost = decimal.Parse(personArgs[1]);
-                //We may have an exception и е хубаво да си го трай кечнем, но първо да си го изведем в метод!
+
                 Product product = new Product(productName, productCost);
                 this.products.Add(product);
             }

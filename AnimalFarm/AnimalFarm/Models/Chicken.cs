@@ -1,0 +1,91 @@
+﻿using System;
+
+namespace AnimalFarm.Models
+{
+    public class Chicken
+    {
+        private const int MinAge = 0;
+        private const int MaxAge = 15;
+        private const string INVALIDE_AGE__EXC_MDG = "Age should be between {0} and {1}.";
+        private double productPerDay;
+        private string name;
+        private int age;
+
+        internal Chicken(string name, int age)
+        {
+            this.Name = name;
+            this.Age = age;
+            this.ProductPerDay = productPerDay;
+        }
+
+        public string Name
+        {
+            get
+            {
+                return this.name;
+            }
+
+            private set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("Name cannot be empty.");
+                }
+                this.name = value;
+            }
+        }
+
+        public int Age
+        {
+            get
+            {
+                return this.age;
+            }
+
+            private set
+            {
+                if (value < 0 || value > 15)
+                {
+                    throw new ArgumentException(String.Format(INVALIDE_AGE__EXC_MDG, MinAge, MaxAge));
+                }
+                this.age = value;
+            }
+        }
+
+        public double ProductPerDay
+        {
+            get
+            {
+                return this.CalculateProductPerDay();
+            }
+            private set
+            {
+                this.productPerDay = CalculateProductPerDay();
+            }
+        }
+
+        private double CalculateProductPerDay()
+        {
+            switch (this.Age)
+            {
+                case 0:
+                case 1:
+                case 2:
+                case 3:
+                    return 1.5;
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                    return 2;
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                    return 1;
+                default:
+                    return 0.75;
+            }
+        }
+    }
+}
